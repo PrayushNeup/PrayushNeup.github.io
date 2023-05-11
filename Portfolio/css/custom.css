@@ -22,6 +22,22 @@
     background-color: rgb(236, 236, 236);
 }
 
+.services_wrapper .card{
+    background-color:var(--bg-light);
+    cursor:pointer;
+    --webkit-transition:all .4s ease 0s;
+    --o-transition:all .4s ease 0s;
+    --ms-transition:all .4s ease 0s;
+    --moz-transitionL:all .4s ease 0s;
+    transition:all .4s ease 0s;
+
+}
+.services_wrapper .card:hover{
+    box-shadow: 1rem 0.9975rem 1.975rem  rgb(77 87 222 / 30%);
+    background:var(--bg-white);
+}
+
+
 /* PORTFOLIO SECTION */
 
 
