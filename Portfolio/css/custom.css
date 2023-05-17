@@ -52,7 +52,7 @@
 
 .portfolio_wrapper .nav-link.active{
     color:var(--secondary-text);
-    background-color:transparent;
+    background-color:rgb(155, 202, 255);
 }
 
 .portfolio_wrapper .portfolio-img{
