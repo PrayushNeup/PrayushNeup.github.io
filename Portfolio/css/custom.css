@@ -48,6 +48,7 @@
     margin-right:0.25rem;
     color: var(--text-black);
     text-transform:uppercase;
+    border: 1px black solid;
 }
 
 .portfolio_wrapper .nav-link.active{
