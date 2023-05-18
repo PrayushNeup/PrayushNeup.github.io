@@ -48,7 +48,11 @@
     margin-right:0.25rem;
     color: var(--text-black);
     text-transform:uppercase;
-    border: 1px black solid;
+    border: 1px lightgrey solid;
+}
+
+.portfolio_wrapper .nav-link:hover{
+    background-color: rgb(220, 237, 252);
 }
 
 .portfolio_wrapper .nav-link.active{
