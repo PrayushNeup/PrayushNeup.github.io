@@ -8,65 +8,81 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/aos.css">
 
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand text-primary fw-bold fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt="" width="" height="" class="logo d-inline-block align-text-top me-5"> 
-                PRAYUSH NEUPANE</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon border"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand text-primary fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt=""
+                    width="" height="" class="logo d-inline-block align-text-top me-5">PRAYUSH NEUPANE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border"></span> </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link ms-lg-0 ms-1" aria-current="page" href="index.html"><i
+                                class="fas fa-home"></i>
+                            Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="productions.html">Projects</a>
+                        <a class="nav-link ms-lg-0 ms-1" href="productions.html"><i class="fas fa-briefcase"></i>
+                            Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Information</a>
+                        <a class="nav-link active ms-lg-0 ms-1" href="contact.html"><i class="fas fa-envelope"></i>
+                            Contact</a>
                     </li>
                 </ul>
 
+                <button id="themeToggle" class="btn btn-outline-primary mb-lg-0 mb-2 ms-lg-0 ms-1"> <i
+                        class="fas fa-moon"></i> Dark Mode</button>
             </div>
+        </div>
+
         </div>
     </nav>
 
+    
 
-    <div class="alert alert-warning text-center mt-2">
-        <strong>Sorry!</strong> The form is still under construction...
-    </div>
+    
 
-    <div class="container-lg py-4">
+    <div class="container-lg py-4" data-aos="fade-zoom-in" data-aos-duration="1200">
+        <div class="alert alert-warning text-center mt-5" role="alert">
+            <strong>Sorry!</strong> The form isn't fully functional right now.
+          </div>
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="section-title text-center border rounded-3 contact">
-                    <h1 class=" text-danger mb-2">Contact Me</h1>
-                    <p class="fs-5">If you wish to contact me, please feel free to reach
+                    <h2 class="text-danger mb-1 fw-bold">Contact Me</h2>
+                    <p class="fs-5 px-3">If you wish to contact me, please feel free to reach
                         out via the provided form or using the listed contact information.
                         I will promptly try to respond to your message.</p>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col" data-aos="fade-right"  data-aos-duration="1200">
                 <div class="contact-item d-flex mb-3">
                     <div class="icon fs-4 text-danger">
                         <i class="fas fa-envelope"></i>
                     </div>
                     <div class="text ms-3">
                         <h3 class="fs-4">Email</h3>
-                        <p class="text-muted">prayushneup12@gmail.com</p>
+                        <p class="textEmail">prayushneup12@gmail.com</p>
                     </div>
                 </div>
                 <div class="contact-item d-flex mb-3">
@@ -75,7 +91,7 @@
                     </div>
                     <div class="text ms-3">
                         <h3 class="fs-4">LinkedIn </h3>
-                        <p class="text-muted">linkedin.com/in/prayush-neupane</p>
+                        <p class="textLinkedIn">linkedin.com/in/prayush-neupane</p>
                     </div>
                 </div>
                 <div class="contact-item d-flex mb-3">
@@ -84,7 +100,7 @@
                     </div>
                     <div class="text ms-3">
                         <h3 class="fs-4">Phone</h3>
-                        <p class="text-muted">+1 (647) x0x-7500</p>
+                        <p class="textPhone">+1 (647) x0x-7500</p>
                     </div>
                 </div>
 
@@ -94,49 +110,92 @@
                     </div>
                     <div class="text ms-3">
                         <h3 class="fs-4">Address</h3>
-                        <p class="text-muted">3x4x Mississauga Road Mississauga, L5L 1C6 Canada</p>
+                        <p class="textAddress">3x4x Mississauga Road Mississauga, L5L 1C6 Canada</p>
                     </div>
                 </div>
-
             </div>
 
-
-
-            <div class="col">
-                <form action="/action_page.php" class="was-validated">
-                    <div class="mb-3 mt-3">
-                        <label for="uname" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="uname" placeholder="Enter your username"
-                            name="uname" required>
-                        <div class="valid-feedback">Valid.</div>
+            <div class="col" data-aos="fade-left"  data-aos-duration="1200">
+                <form action="/action_page.php" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName"
+                            placeholder="Enter your first name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
-                    <div class="mb-3">
-                        <label for="pwd" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="pwd" placeholder="Enter your password"
-                            name="pswd" required>
-                        <div class="valid-feedback">Valid.</div>
+                    <div class="col-md-4">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" id="lastName"
+                            placeholder="Enter your last name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <div class="col-md-4">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
                         <input type="email" class="form-control" name="email" id="exampleInputEmail1"
                             placeholder="Enter your email" required>
-                        <div class="valid-feedback">Valid.</div>
+                        <!-- <div class="valid-feedback">Valid.</div> -->
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
+                    <div class="col-md-6">
+                        <label for="city" class="form-label">City</label>
+                        <input type="text" class="form-control" id="city" placeholder="Enter your city"
+                            required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="provinces" class="form-label">Province</label>
+                        <select class="form-select" id="provinces" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Northwest Territories">Northwest Territories</option>
+                            <option value="Nunavut">Nunavut</option>
+                            <option value="Yukon">Yukon</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid province.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="zip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="zip"
+                            placeholder="Enter ZIP Code" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+
                     <div class="mb-3">
-                        <label for="comment" class="form-label">Send me a message</label>
-                        <textarea class="form-control" rows="5" id="comment" class="form-control" name="text"
-                            placeholder="Enter your text" required></textarea>
-                        <div class="valid-feedback">Valid.</div>
-                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <label for="Textarea" class="form-label">Send me a Message</label>
+                        <textarea class="form-control" id="Textarea" rows="3"
+                            placeholder="Enter your message" required></textarea>
+                            <div class="invalid-feedback">
+                                Please provide a message.
+                            </div>
                     </div>
-                    <button type="submit" class="btn btn-success mt-3" data-bs-toggle="tooltip"
-                        title="Thank you! I'll try to respond ASAP.">Submit</button>
+
+                    <div class="col-12">
+                        <button class="btn btn-success" data-aos="zoom-in"  data-aos-duration="1200" data-bs-toggle="tooltip"
+                        title="Thank you! I'll try to respond ASAP." type="submit">Submit</button>
+                    </div>
                 </form>
             </div>
-
 
 
         </div>
@@ -146,18 +205,60 @@
 
     </div>
 
-    <footer class="footer border-top py-4 foot">
+    <footer class="footer border-top py-3 foot">
         <div class="container-lg">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="m-0 text-center text-muted">&copy;2024. All rights reserved to <strong>Prayush
-                            Neupane</strong>.</p>
-                </div>
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i class="fab fa-linkedin"></i></a>
+              <p class="m-0 text-center">&copy;2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
             </div>
+          </div>
         </div>
-    </footer>
+      </footer>
+      
     <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
+        (() => {
+            'use strict'
 
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()</script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init(); /* AOS animation library execution*/
+
+        // Select the button
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i'); // Select the icon inside the button
+
+        // Add event listener to toggle dark mode
+        themeToggle.addEventListener('click', () => {
+            // Toggle the dark mode class on the body
+            document.body.classList.toggle('dark-mode');
+
+            // Update the button text based on the current mode
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"> </i> Light Mode'; // Moon icon and Light Mode text
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Sun icon and Dark Mode text
+            }
+        });
+
+    </script>
+</body>
 
 </html>

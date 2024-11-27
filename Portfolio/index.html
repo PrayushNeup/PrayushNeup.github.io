@@ -8,37 +8,43 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
-
+  <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
-    <div class="container-fluid">
-    
-    
-      <a class="navbar-brand text-primary fw-bold fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt="" width="" height="" class="logo d-inline-block align-text-top me-5">
-         PRAYUSH NEUPANE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon border"><i class="fas fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+    <div class="container-fluid ">
+
+      <a class="navbar-brand text-primary fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt="" width=""
+          height="" class="logo d-inline-block align-text-top me-5">PRAYUSH NEUPANE</a>
+          
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon border"></span> </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            <a class="nav-link active ms-lg-0 ms-1" aria-current="page" href="index.html"><i class="fas fa-home"></i>
+              Home</a>
           </li>
-          
+
           <li class="nav-item">
-            <a class="nav-link" href="productions.html">Projects</a>
+            <a class="nav-link ms-lg-0 ms-1" href="productions.html"><i class="fas fa-briefcase"></i> Projects</a>
           </li>
-          
+
           <li class="nav-item">
-            <a class="nav-link"  href="contact.html">Contact Information</a>
+            <a class="nav-link ms-lg-0 ms-1" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
           </li>
         </ul>
-        
+
+        <button id="themeToggle" class="btn btn-outline-primary mb-lg-0 mb-2 ms-lg-0 ms-1"> <i class="fas fa-moon"></i> Dark Mode</button>
       </div>
-    </div> 
+    </div>
+    
+    </div>
   </nav>
 
   <!--Home Section Start-->
@@ -47,21 +53,26 @@
     <div class="container-lg">
       <div class="row min-vh-100 align-item-center align-content-center">
         <div class="col-md-6 mt-5 mt-md-0">
-          <div class="home-img text-center">
-            <img src="images/profile pic.png" class="rounded-circle mw-100 shadow-lg p-2" alt="profile img">
+          <div class="home-img text-center" data-aos="fade-up" data-aos-duration="1000">
+            <img src="images/profile pic.png" class="rounded-circle mw-100 p-2" alt="profile img">
           </div>
         </div>
+
         <div class="col-md-6 mt-5 mt-md-0">
-          <div class="home-text ms-5">
-            <p class="text-primary mb-1 fs-5">Hi, I'm</p>
-            <h3 class="text-primary text-uppercase fs-3 fw-bold">Prayush Neupane</h3>
-            <h1 class="text-danger text-uppercase fs-1 fw-bold">Aspiring Front-End Developer | UI/UX Designer</h2>
-              <p class="mt-4 text-muted">As a recent graduate from the University of Toronto, I am drawn to the challenges 
-                of crafting dynamic and interactive web applications that engage users. My focus lies in web development with 
-                a passion for becoming a full-stack web developer. I am adept at utilizing various design tools and programming
-                languages to deliver engaging solutions that leave a lasting impression while prioritizing usability and accessibility.
+          <div class="home-text ms-5" data-aos="fade-down" data-aos-duration="1200">
+            <p class="text-primary mb-1 fs-4">Hi, I'm</p>
+            <h3 class="text-primary text-uppercase fs-3 fw-bold" data-aos="zoom-out-left" data-aos-duration="1200">
+              Prayush Neupane</h3>
+            <h1 class="text-danger text-uppercase fs-2 fw-bold text-decoration-underline">Web Developer | UX/UI Designer</h1>
+            
+              <p class="mt-4 introText">As a recent graduate from the University of Toronto, I am drawn to the
+                challenges
+                of crafting dynamic and interactive web applications that engage users. My focus lies in web development
+                with a passion for becoming a full-stack web developer. I am adept at utilizing various design tools andprogramming
+                languages to deliver engaging solutions that leave a lasting impression while prioritizing usability and
+                accessibility.
               </p>
-              <a href="productions.html" class="btn btn-danger px-3 mt-3">My Projects</a>
+              <a href="productions.html" class="btn btn-danger projectBtn px-3 mt-3" data-aos="zoom-in">My Projects</a>
 
           </div>
         </div>
@@ -73,100 +84,110 @@
 
   <section class="about py-1" id="about">
     <div class="container-lg py-1 mt-2">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="section-title text-center">
-                    <h2 class="fw-bold md-5 mb-5 pb-4 text-danger">About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-lg-1">
-                    <div class="about-text">
-                        <h3 class="fs-3 md-3">Summary Of My Experience</h3>
-                        <p class="text-muted">I have experience with HTML, CSS, Bootstrap, Javascript
-                           and Python with a slight introduction to Java and NodeJS. I have used these skills to create
-                           dynamic and engaging web applications. I have also worked with graphic design software 
-                           like Adobe Photoshop, Illustrator, XD, InDesign and Figma. Using these softwares, I have designed 
-                           compelling front-end prototypes and high fidelity wireframes for user interface applications. Additionally, I have	crafted 
-                           templates and themes using Content Management Systems such as Wix, Squarespace, and WordPress to design and maintain functional websites.
-                          </p>
-                        </div>
-                </div>
-                <div class="col-md-6 mt-5 mt-md-0">
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">HTML</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                    </div>
-                    
-                    </div>
+      <div class="row justify-content-center">
 
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">CSS</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 85%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">Javascript</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">Adobe Photoshop</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">Adobe Illustrator</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">Python</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 80%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-item md-4">
-                        <h3 class="fs-6">Bootstrap</h3>
-                        <div class="progress" style="height: 5px;">
-                        <div class="progress-bar bg-danger" role="progressbar" style="width: 84%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                        </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                
-                    
-            </div>
-            
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold md-5 mb-4 pb-3 text-danger" data-aos="zoom-in-down" data-aos-duration="800">ABOUT ME</h2>
+          </div>
         </div>
 
-    </div>
-</section>
+        <div class="row">
+          <div class="col-md-6 p-lg-1 ">
+            <div class="about-text" data-aos="fade-up-right" data-aos-duration="1000">
+              <h3 class="fs-3 md-3 text-decoration-underline ps-1">Summary of my Experience</h3>
+              <p class="summary border border-2 border-secondary-subtle rounded p-2">I have experience with HTML, CSS, Bootstrap, Javascript
+                and Python and have used these skills to create
+                dynamic and engaging web applications. I have also worked with graphic design software
+                like Adobe Photoshop, Illustrator, and Figma. Using these softwares, I have designed
+                compelling front-end prototypes and high fidelity wireframes for user interface applications.
+                Additionally, I have crafted
+                templates and themes using Content Management Systems such as Wix, Squarespace, and WordPress to design
+                and maintain functional websites.
+              </p>
+            </div>
+          </div>
 
-  <section class="services mt-5" id="services">
+          <div class="col-md-6 mt-5 mt-md-0" data-aos="fade-down-left" data-aos-duration="1000">
+            <div class="skill-item md-4">
+              <h3 class="fs-6">HTML</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 90%;"
+                  data-aos="progress-bar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">CSS</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 89%;"
+                  data-aos="progress-bar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">Javascript</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 83%;"
+                  data-aos="progress-bar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">Adobe Photoshop</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 73%;"
+                  data-aos="progress-bar" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">Adobe Illustrator</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 79%;"
+                  data-aos="progress-bar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">Python</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 84%;"
+                  data-aos="progress-bar" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-item md-4">
+              <h3 class="fs-6">Bootstrap</h3>
+              <div class="progress" style="height: 5px;">
+                <div class="progress-bar bg-danger" role="progressbar" style="--progress-width: 89%;"
+                  data-aos="progress-bar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="services mt-4" id="services">
     <div class="container-lg pt-5">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <div class="section-title text-center">
-            <h2 class="text-danger fw-bold mb-5 mt-5">What I Bring To The Table</h2>
+            <h2 class="text-danger fw-bold mb-5 mt-5" data-aos="zoom-in-up" data-aos-duration="1000">MY TOOLKIT</h2>
           </div>
         </div>
       </div>
@@ -174,17 +195,18 @@
 
       <div class="row text-center">
         <!--FIRST COLUMN-->
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="service-item shadow-sm p-4 rounded bg-white">
+        <div class="col-md-6 col-lg-4 mb-5" data-aos="zoom-out-right" data-aos-duration="1000">
+          <div class="service-item shadow-sm p-4 rounded bg-body-tertiary">
             <div class="icon my-3 text-danger fs-1">
               <i class="fas fa-code"></i>
             </div>
-            <h3 class="fs-5 py-2">WEB DEVELOPMENT</h3>
-            <p class="text-muted">
+
+            <h3 class="fs-5 py-2 text-dark">WEB DEVELOPMENT</h3>
+            <p class="text-secondary-emphasis">
               I have gained significant experience in the fundamental web development languages
-               of HTML and CSS. In addition, I have hands-on experience with the popular programming 
-               languages; Python and JavaScript, which I have utilized to create dynamic web 
-               applications and interactive web experiences.
+              of HTML and CSS. In addition, I have hands-on experience with the popular programming
+              languages; Python and JavaScript, which I have utilized to create dynamic web
+              applications and interactive web experiences.
 
             </p>
 
@@ -193,47 +215,64 @@
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen5-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen5-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                     HTML & CSS
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen5-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    HTML & CSS
                   </button>
                 </h2>
-                <div id="panelsStayOpen5-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body">
+
+                <div id="panelsStayOpen5-collapseOne" class="accordion-collapse collapse show customPanel"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body text-dark">
                     I have extensive experience with HTML and CSS and have developed multiple
-                    web pages using the front-end framework Bootstrap. By leveraging Bootstrap's 
+                    web pages using the front-end framework Bootstrap. By leveraging Bootstrap's
                     capabilities, I have developed sleek and consistent web pages that adapt seamlessly
                     to various screen sizes and devices while prioritizing user experience and accessibility.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen6-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen6-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen6-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
                     Javascript
                   </button>
                 </h2>
-                <div id="panelsStayOpen6-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
-                    I have actively utilized JavaScript to enhance the interactivity and user experience of my web pages. 
-                    In my past projects, I have incorporated JavaScript to add interactive features, such as dynamic content,
-                     form validation, and smooth animations.
+
+                <div id="panelsStayOpen6-collapseTwo" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body text-dark">
+                    I have actively utilized JavaScript to enhance the interactivity and user experience of my web
+                    pages.
+                    In my past projects, I have incorporated JavaScript to add interactive features, such as dynamic
+                    content,
+                    form validation, and smooth animations.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen7-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen7-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen7-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     Python
                   </button>
                 </h2>
-                <div id="panelsStayOpen7-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
-                      I have gained experience in Python by developing a variety of applications for assignments that
-                      demonstrate important programming concepts. Through these projects, I have honed
-                      my problem-solving skills and demonstrated my ability to develop functional and 
-                      engaging Python applications.
+
+                <div id="panelsStayOpen7-collapseThree" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body text-dark">
+                    I have gained experience in Python by developing a variety of applications for assignments that
+                    demonstrate important programming concepts. Through these projects, I have honed
+                    my problem-solving skills and demonstrated my ability to develop functional and
+                    engaging Python applications.
                   </div>
                 </div>
+
               </div>
             </div>
             <!--Accordion Ended here-->
@@ -241,16 +280,17 @@
         </div>
 
         <!--SECOND COLUMN-->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-item shadow-sm p-4 rounded bg-white">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-in-down" data-aos-duration="1000">
+          <div class="service-item shadow-sm p-4 rounded bg-body-tertiary">
             <div class="icon my-3 text-danger fs-1">
               <i class="fas fa-desktop"></i>
             </div>
-            <h3 class="fs-5 py-2">GAME DESIGN</h3>
-            <p class="text-muted">
+
+            <h3 class="fs-5 py-2 text-dark">GAME DESIGN</h3>
+            <p class="text-secondary-emphasis">
               I have gained experience in creating immersive virtual environments and games
               using various software tools. Through these projects, I have honed my skills in 3D modelling, animation,
-               game mechanics, and user interface design. 
+              game mechanics, and user interface design.
             </p>
 
             <!--WEB Design Accordion begin here-->
@@ -258,44 +298,59 @@
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
                     Unity
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body">
+
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show customPanel"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body text-dark">
                     I have gained practical experience using Unity for developing
                     immersive virtual environments and games. Through multiple assignments, I have utilized Unity
-                      to create immersive and interactive virtual environments that showcase my
-                      skills in 3D modelling, game mechanics, and user interface design. 
+                    to create immersive and interactive virtual environments that showcase my
+                    skills in 3D modelling, game mechanics, and user interface design.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
                     Maya
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
+
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body text-dark">
                     To create a realistic and interactive VR environment, I have utilized 3D modelling software
-                     called Maya to design objects like trees, vehicles, and buildings. I have then 
-                     imported these models into the Unity VR environment to create a seamless and immersive experience for users. 
+                    called Maya to design objects like trees, vehicles, and buildings. I have then
+                    imported these models into the Unity VR environment to create a seamless and immersive experience
+                    for users.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     Adobe Audition
                   </button>
                 </h2>
-                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
+
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body text-dark">
                     In my immersive environment project, I have utilized Adobe Audition for audio editing
-                     to create custom audio tracks. I have mixed and edited different music and sound files to create
-                      a main audio track that aligns with the game's theme and enhances the user experience.
+                    to create custom audio tracks. I have mixed and edited different music and sound files to create
+                    a main audio track that aligns with the game's theme and enhances the user experience.
                   </div>
                 </div>
               </div>
@@ -303,20 +358,21 @@
 
             <!--Web Design Accordion End here-->
 
-
           </div>
         </div>
 
         <!--THIRD COLUMN-->
-        <div class="col-md-6 col-lg-4 mb-4">
-          <div class="service-item shadow-sm p-4 rounded bg-white">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="zoom-out-left" data-aos-duration="1000">
+          <div class="service-item shadow-sm p-4 rounded bg-body-tertiary">
             <div class="icon my-3 text-danger fs-1">
               <i class="fas fa-paint-brush"></i>
             </div>
-            <h3 class="fs-5 py-2">GRAPHIC DESIGN</h3>
-            <p class="text-muted">I have an interest in graphic design and enjoy practicing it as a hobby. 
-              In my web development projects, I have utilized various graphic design software and applications to 
-              create logos, edit pictures, and develop prototypes. I also have used the software to create wireframes and prototypes of various user interface applications.
+
+            <h3 class="fs-5 py-2 text-dark">GRAPHIC DESIGN</h3>
+            <p class="text-secondary-emphasis">I have an interest in graphic design and enjoy practicing it as a hobby.
+              In my web development projects, I have utilized various graphic design software and applications to
+              create logos, edit pictures, and develop prototypes. I also have used the software to create wireframes
+              and prototypes of various user interface applications.
             </p>
 
             <!--Accordion begin here-->
@@ -324,49 +380,71 @@
             <div class="accordion" id="accordionPanelsStayOpenExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen2-headingOne">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen2-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                   Adobe Photoshop
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen2-collapseOne" aria-expanded="true"
+                    aria-controls="panelsStayOpen-collapseOne">
+                    Adobe Photoshop
                   </button>
                 </h2>
-                <div id="panelsStayOpen2-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                  <div class="accordion-body">
-                    I have used Adobe Photoshop when designing T-shirt mockups. Also, during my game designing process, I utilized Photoshop
-                    to create a panoramic view of my game and design a logo. 
+
+                <div id="panelsStayOpen2-collapseOne" class="accordion-collapse collapse show customPanel"
+                  aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body text-dark">
+                    I have used Adobe Photoshop when designing T-shirt mockups. Also, during my game designing process,
+                    I utilized Photoshop
+                    to create a panoramic view of my game and design a logo.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen3-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen3-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen3-collapseTwo" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseTwo">
                     Adobe Illustrator
                   </button>
                 </h2>
-                <div id="panelsStayOpen3-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                  <div class="accordion-body">
-                    I have practical experience using Adobe Illustrator to design visual graphics for different concepts and website mockups. 
+
+                <div id="panelsStayOpen3-collapseTwo" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body text-dark">
+                    I have practical experience using Adobe Illustrator to design visual graphics for different concepts
+                    and website mockups.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen4-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen4-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen4-collapseThree" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseThree">
                     Adobe XD and Adobe InDesign
                   </button>
                 </h2>
-                <div id="panelsStayOpen4-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-                  <div class="accordion-body">
-                    I have used Adobe XD to design prototypes of different web pages and used Adobe InDesign to create the layouts of pamphlets.
+
+                <div id="panelsStayOpen4-collapseThree" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingThree">
+                  <div class="accordion-body text-dark">
+                    I have used Adobe XD to design prototypes of different web pages and used Adobe InDesign to create
+                    the layouts of pamphlets.
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
                 <h2 class="accordion-header" id="panelsStayOpen4-headingFour">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen4-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#panelsStayOpen4-collapseFour" aria-expanded="false"
+                    aria-controls="panelsStayOpen-collapseFour">
                     Figma
                   </button>
                 </h2>
-                <div id="panelsStayOpen4-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
-                  <div class="accordion-body">
+
+                <div id="panelsStayOpen4-collapseFour" class="accordion-collapse collapse customPanel"
+                  aria-labelledby="panelsStayOpen-headingFour">
+                  <div class="accordion-body text-dark">
                     I have worked with Figma to design low and high-fidelity wireframes of web and mobile applications.
                   </div>
                 </div>
@@ -375,27 +453,49 @@
 
             <!--Accordion End here-->
 
-
           </div>
         </div>
-
 
       </div>
     </div>
   </section>
 
 
-  <footer class="footer border-top py-4 foot">
+  <footer class="footer border-top py-3 foot">
     <div class="container-lg">
       <div class="row">
-        <div class="col-lg-12">
-          <p class="m-0 text-center text-muted">&copy;2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
+        <div class="col-lg-12 text-center">
+          <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i class="fab fa-linkedin"></i></a>
+          <p class="m-0 text-center">&copy;2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
         </div>
       </div>
     </div>
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init(); /* AOS animation library execution*/
+
+    // Select the button
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i'); // Select the icon inside the button
+
+    // Add event listener to toggle dark mode
+    themeToggle.addEventListener('click', () => {
+      // Toggle the dark mode class on the body
+      document.body.classList.toggle('dark-mode');
+
+      // Update the button text based on the current mode
+      if (document.body.classList.contains('dark-mode')) {
+        themeToggle.innerHTML = '<i class="fas fa-sun"> </i> Light Mode'; // Moon icon and Light Mode text
+      } else {
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Sun icon and Dark Mode text
+      }
+    });
+
+  </script>
 
 </body>
 

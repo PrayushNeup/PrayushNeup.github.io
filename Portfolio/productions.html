@@ -8,44 +8,57 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
+    <link rel="stylesheet" href="css/aos.css">
 </head>
 
 <body>
 
 
-    <nav class="navbar navbar-expand-lg bg-light shadow-sm fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand text-primary fw-bold fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt="" width="" height="" class="logo d-inline-block align-text-top me-5">
-                PRAYUSH NEUPANE </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon border"><i class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand text-primary fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt=""
+                    width="" height="" class="logo d-inline-block align-text-top me-5">PRAYUSH NEUPANE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border"></span> </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link ms-lg-0 ms-1" aria-current="page" href="index.html"><i
+                                class="fas fa-home"></i>
+                            Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="productions.html">Projects</a>
+                        <a class="nav-link active ms-lg-0 ms-1" href="productions.html"><i class="fas fa-briefcase"></i>
+                            Projects</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Information</a>
+                        <a class="nav-link ms-lg-0 ms-1" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
                     </li>
                 </ul>
 
+                <button id="themeToggle" class="btn btn-outline-primary mb-lg-0 mb-2 ms-lg-0 ms-1"> <i
+                        class="fas fa-moon"></i> Dark Mode</button>
             </div>
+        </div>
+
         </div>
     </nav>
 
+    <div class="container mt-5 pt-5">
+        <h2 class="text-danger text-center fw-bold" data-aos="zoom-in" data-aos-duration="900">MY WORKS</h2>
+    </div>
 
-    <div class="container mt-3">
-        <h2 class="text-danger h1 text-center">Projects</h2>
+    <div class="container mt-3" data-aos="zoom-in" data-aos-duration="1000">
         <div class="mt-4 mb-4 p-5 pt-2 pb-3  rounded painting">
-            <h2 class="">T-Shirts Design</h2>
+            <h2 class="text-decoration-underline">T-Shirts Design</h2>
             <p class="fs-5">
                 Through designing T-shirts using Photoshop and Illustrator, I've developed an understanding
                 of fundamental visual principles like colour, contrast, and balance which have allowed me to craft
@@ -59,7 +72,7 @@
     <section id="services" class="services_wrapper">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4">
-                <div class="col">
+                <div class="col" data-aos="flip-left" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt1.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -68,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-left" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt2.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -77,7 +90,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-left" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt3.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -86,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-right" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt4.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -95,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-right" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt5.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -104,7 +117,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="flip-right" data-aos-duration="1200">
                     <div class="card border-info h-80">
                         <img src="t-shirt images/shirt6.png" class="card-img-top" alt="...">
                         <div class="card-body bg-light">
@@ -205,10 +218,10 @@
 
 
     <section id="portfolio" class="portfolio_wrapper">
-        <div class="container mt-5">
+        <div class="container mt-5" data-aos="fade-down" data-aos-duration="1200">
             <div class="row">
                 <div class="col-sm-12 text-left mb-md05 mg-2">
-                    <h2>GAME/WEB DESIGN PROJECTS</h2>
+                    <h2>GAME & WEB DESIGN</h2>
                 </div>
             </div>
             <div class="row">
@@ -235,10 +248,11 @@
                         <div class="row">
                             <div class="container">
                                 <div class="mb-4 p-5 pt-2 pb-3  rounded painting">
-                                    <h2>Virtual 3D Environment</h2>
-                                    <p class="fs-5">
+                                    <h2 class="text-decoration-underline">Virtual 3D Environment</h2>
+                                    <p class="fs-5 ps-1">
                                         I created a first-person perspective, 3D immersive virtual
-                                        environment in Unity and used Autodesk Maya to create 3D low poly models which were imported into Unity
+                                        environment in Unity and used Autodesk Maya to create 3D low poly models which
+                                        were imported into Unity
                                         to be used as objects in the
                                         virtual world. I also used Adobe Audition to create the music and audio.
                                     </p>
@@ -246,7 +260,8 @@
                                         <video controls id="myVideo">
                                             <source src="video/PORTFOLIO VID.mp4" type="video/mp4">
                                             <p>Your browser doesn't support HTML5 video. Here is a <a
-                                                    href="video/PORTFOLIO VID.mp4">link to the video</a> instead.</p>
+                                                    href="video/PORTFOLIO VID.mp4">
+                                                    link to the video </a> instead.</p>
                                         </video>
                                     </div>
                                 </div>
@@ -260,11 +275,12 @@
                         <div class="row">
                             <div class="container">
                                 <div class="mb-4 p-5 pt-2 pb-3  rounded painting">
-                                    <h2>Website Recreation</h2>
-                                    <p class="fs-5">
+                                    <h2 class="ps-1 text-decoration-underline">Website Recreation</h2>
+                                    <p class="fs-5 ps-2">
                                         After using Wix to make a website that focuses on helping low-income
                                         Ontarians discover nutritious food sources, I later decided to recreate
-                                        parts of that website, specifically the "Home" page and the "Get Involved" page using HTML and CSS.
+                                        parts of that website, specifically the "Home" page and the "Get Involved" page
+                                        using HTML and CSS.
                                         I also recreated the home page of Sheridan College's website.
                                     </p>
 
@@ -288,8 +304,8 @@
 
                                             <div class="carousel-inner">
                                                 <div class="carousel-item active">
-                                                    <img src="images/wix1.jpg" alt="Los Angeles" class="d-block mb-5 pb-5"
-                                                        style="width:100%">
+                                                    <img src="images/wix1.jpg" alt="Los Angeles"
+                                                        class="d-block mb-5 pb-5" style="width:100%">
                                                     <div class="carousel-caption w-50 mx-auto bg-light">
                                                         <h3 class="text-dark fw-bold">Home Page</h3>
                                                         <p class="text-dark fw-bold">Image of the home page of the Wix
@@ -298,16 +314,17 @@
                                                 </div>
 
                                                 <div class="carousel-item">
-                                                    <img src="images/website.jpg" alt="Los Angeles" class="d-block mb-5 pb-5"
-                                                        style="width:100%">
+                                                    <img src="images/website.jpg" alt="Los Angeles"
+                                                        class="d-block mb-5 pb-5" style="width:100%">
                                                     <div class="carousel-caption w-50 mx-auto bg-light">
                                                         <h3 class="text-dark fw-bold">Redone Home page</h3>
-                                                        <p class="text-dark fw-bold">Image of the Wix home page done by me
+                                                        <p class="text-dark fw-bold">Image of the Wix home page done by
+                                                            me
                                                         </p>
                                                     </div>
                                                 </div>
 
-                                                
+
 
                                                 <div class="carousel-item">
                                                     <img src="images/wix3.jpg" alt="New York" class="mx-auto d-block"
@@ -321,8 +338,8 @@
 
 
                                                 <div class="carousel-item">
-                                                    <img src="images/website2.jpg" alt="New York" class="mx-auto d-block"
-                                                        style="width:70%">
+                                                    <img src="images/website2.jpg" alt="New York"
+                                                        class="mx-auto d-block" style="width:70%">
                                                     <div class="carousel-caption w-50 mx-auto bg-light">
                                                         <h3 class="text-dark fw-bold">Redone Get Involed page</h3>
                                                         <p class="text-dark fw-bold">Image of the Get involved page done
@@ -330,8 +347,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="carousel-item">
-                                                    <img src="images/sheridan home page.jpg" alt="Chicago" class="d-block mb-5 pb-5"
-                                                        style="width:100%">
+                                                    <img src="images/sheridan home page.jpg" alt="Chicago"
+                                                        class="d-block mb-5 pb-5" style="width:100%">
                                                     <div class="carousel-caption w-50 mx-auto bg-light">
                                                         <h3 class="text-dark fw-bold">Sheridan College's Home Page
                                                         </h3>
@@ -340,10 +357,11 @@
                                                 </div>
 
                                                 <div class="carousel-item">
-                                                    <img src="images/sheridan home page recreation.jpg" alt="Chicago" class="d-block mb-4 pb-5"
-                                                        style="width:100%">
+                                                    <img src="images/sheridan home page recreation.jpg" alt="Chicago"
+                                                        class="d-block mb-4 pb-5" style="width:100%">
                                                     <div class="carousel-caption w-50 mx-auto bg-light">
-                                                        <h3 class="text-dark fw-bold">Redone Sheridan College's Home Page</h3>
+                                                        <h3 class="text-dark fw-bold">Redone Sheridan College's Home
+                                                            Page</h3>
                                                     </div>
                                                 </div>
 
@@ -371,15 +389,15 @@
     </section>
 
     <section id="portfolioTwo" class="portfolio_wrapper">
-        <div class="container mt-5">
-            <div class="mb-4 p-5 pt-2 pb-3  rounded painting"> 
+        <div class="container mt-5" data-aos="fade-up" data-aos-duration="1200">
+            <div class="mb-4 p-5 pt-2 pb-3  rounded painting">
 
-               
+
                 <div class="row">
                     <div class="col-sm-12 text-left mb-md05 mg-2">
-                        <h2 class="mt-2 mb-1">Pamphlet Design</h2>
+                        <h2 class="mt-2 mb-1 text-decoration-underline">Pamphlet Design</h2>
                         <p class="fs-5">
-                            I designed a promotional pamphlet for a wellness studio concept 
+                            I designed a promotional pamphlet for a wellness studio concept
                             using Adobe InDesign as well as Adobe Illustrator to design the graphics in the pamphlet.
                         </p>
                     </div>
@@ -398,19 +416,20 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/Pamphlet 1.bmp" class="d-block w-100" alt="Title page">
-                            
+
                         </div>
                         <div class="carousel-item">
                             <img src="images/Pamphlet 2.jpg" class="d-block w-100" alt="Product description">
-                            
+
                         </div>
                         <div class="carousel-item">
                             <img src="images/pamphlet3.png" class="d-block w-100" alt="Specifications of the studio">
-                            
+
                         </div>
                         <div class="carousel-item">
-                            <img src="images/4thpamphlet.png" class="d-block w-100" alt="Specifications with description">
-                            
+                            <img src="images/4thpamphlet.png" class="d-block w-100"
+                                alt="Specifications with description">
+
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -429,12 +448,14 @@
     </section>
 
 
-    <footer class="footer border-top py-4 foot">
+    <footer class="footer border-top py-3 foot">
         <div class="container-lg">
             <div class="row">
-                <div class="col-lg-12">
-                    <p class="m-0 text-center text-muted">&copy;2024. All rights reserved to <strong>Prayush
-                            Neupane</strong>.</p>
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i
+                            class="fab fa-linkedin"></i></a>
+                    <p class="m-0 text-center">&copy;2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
                 </div>
             </div>
         </div>
@@ -447,6 +468,28 @@
         function pauseVid() {
             vid.pause();
         } 
+    </script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init(); /* AOS animation library execution*/
+
+        // Select the button
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i'); // Select the icon inside the button
+
+        // Add event listener to toggle dark mode
+        themeToggle.addEventListener('click', () => {
+            // Toggle the dark mode class on the body
+            document.body.classList.toggle('dark-mode');
+
+            // Update the button text based on the current mode
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"> </i> Light Mode'; // Moon icon and Light Mode text
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Sun icon and Dark Mode text
+            }
+        });
+
     </script>
 
 </body>
