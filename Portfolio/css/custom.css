@@ -46,7 +46,7 @@ body{
 }
 
 .spacer {
-    padding-bottom: 200px;
+    padding-bottom: 218px;
 }
 
 .foot {
@@ -70,8 +70,6 @@ body{
     box-shadow: 8px 8px 29px 28px rgba(60, 61, 61, 0.171);
     
 }
-
-
 
 .services_wrapper .card {
     background-color: var(--bg-light);
