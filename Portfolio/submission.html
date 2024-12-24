@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitted!</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/aos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container-fluid ">
+
+            <a class="navbar-brand text-primary fs-3 ps-5 ms-5" href="index.html"> <img src="images/logo.png" alt=""
+                    width="" height="" class="logo d-inline-block align-text-top me-5">PRAYUSH NEUPANE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border"></span> </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link ms-lg-0 ms-1" aria-current="page" href="index.html"><i
+                                class="fas fa-home"></i>
+                            Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ms-lg-0 ms-1" href="productions.html"><i class="fas fa-briefcase"></i>
+                            Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link ms-lg-0 ms-1" href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+
+                <button id="themeToggle" class="btn btn-outline-primary mb-lg-0 mb-2 ms-lg-0 ms-1"> <i
+                        class="fas fa-moon"></i> Dark Mode</button>
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div class="spacer"></div>
+    <div class="container mt-5 w-50" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="mt-5 ms-5 mb-4 p-5 pt-4 pb-4  text-center  rounded painting">
+            <div class="text-center">
+                <img src="images/check.png" class="checkmark rounded img-fluid" alt="Green checkmark">
+            </div>
+            <h2 class="successText">Form Submitted Successfully!</h2>
+            <p class="fs-4">
+                Thank you for contacting me! I will try to reach out as soon as possible.
+            </p>
+            <a href="contact.html" class="btn btn-success px-3 mt-2" data-aos="zoom-in">Go Back</a>
+        </div>
+        
+    </div>
+
+    <div class="spacer2"></div>
+    
+    <footer class="footer border-top py-3 foot">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i class="fab fa-linkedin"></i></a>
+              <p class="m-0 text-center">&copy; 2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init(); /* AOS animation library execution*/
+
+        // Select the button
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = themeToggle.querySelector('i'); // Select the icon inside the button
+
+        // Add event listener to toggle dark mode
+        themeToggle.addEventListener('click', () => {
+            // Toggle the dark mode class on the body
+            document.body.classList.toggle('dark-mode');
+
+            // Update the button text based on the current mode
+            if (document.body.classList.contains('dark-mode')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"> </i> Light Mode'; // Moon icon and Light Mode text
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode'; // Sun icon and Dark Mode text
+            }
+        });
+
+    </script>
+
+</body>
+</html>
+

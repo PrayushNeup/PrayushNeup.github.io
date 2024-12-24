@@ -57,8 +57,8 @@
         <div class="row justify-content-center mt-2 mb-3">
             <div class="col-lg-8 mt-5">
                 <div class="section-title text-center border rounded-3 contact">
-                    <h2 class="text-danger mb-1 fw-bold">Contact Me</h2>
-                    <p class="fs-5 px-3">If you'd like to get in touch, please feel free to reach out 
+                    <h2 class="text-danger mb-1 fw-bold">GET IN TOUCH</h2>
+                    <p class="fs-5 px-3">If you'd like to get in touch, please feel free to reach out
                         through the contact form or by using the contact details provided.</p>
                 </div>
             </div>
@@ -67,7 +67,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col" data-aos="fade-right"  data-aos-duration="1200">
+            <div class="col" data-aos="fade-right" data-aos-duration="1200">
                 <div class="contact-item d-flex mb-3">
                     <div class="icon fs-4 text-danger">
                         <i class="fas fa-envelope"></i>
@@ -107,11 +107,19 @@
                 </div>
             </div>
 
-            <div class="col" data-aos="fade-left"  data-aos-duration="1200">
-                <form action="/action_page.php" class="row g-3 needs-validation" novalidate>
+            <div class="col" data-aos="fade-left" data-aos-duration="1200">
+
+                <form method="POST" id="form" class="row g-3 needs-validation" validate>
+                    <!-- honeypot -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <input type="hidden" name="access_key" value="008a05d4-0136-40c5-adf4-424a1555ecfb">
+
+                    <input type="hidden" name="redirect" value="submission.html">
+
                     <div class="col-md-4">
                         <label for="firstName" class="form-label">First Name</label>
-                        <input type="text" class="form-control" id="firstName"
+                        <input type="text" class="form-control" id="firstName" name="First Name"
                             placeholder="Enter your first name" required>
                         <div class="valid-feedback">
                             Looks good!
@@ -120,7 +128,7 @@
                     </div>
                     <div class="col-md-4">
                         <label for="lastName" class="form-label">Last Name</label>
-                        <input type="text" class="form-control" id="lastName"
+                        <input type="text" class="form-control" id="lastName" name="Last Name"
                             placeholder="Enter your last name" required>
                         <div class="valid-feedback">
                             Looks good!
@@ -136,7 +144,7 @@
                     </div>
                     <div class="col-md-6">
                         <label for="city" class="form-label">City</label>
-                        <input type="text" class="form-control" id="city" placeholder="Enter your city"
+                        <input type="text" class="form-control" id="city" name="City" placeholder="Enter your city"
                             required>
                         <div class="invalid-feedback">
                             Please provide a valid city.
@@ -144,7 +152,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="provinces" class="form-label">Province</label>
-                        <select class="form-select" id="provinces" required>
+                        <select class="form-select" id="provinces" name="province" required>
                             <option selected disabled value="">Choose...</option>
                             <option value="Alberta">Alberta</option>
                             <option value="British Columbia">British Columbia</option>
@@ -166,27 +174,29 @@
                     </div>
                     <div class="col-md-3">
                         <label for="zip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="zip"
-                            placeholder="Enter ZIP Code" required>
+                        <input type="text" class="form-control" id="zip" name="ZIP Code" placeholder="Enter ZIP Code"
+                            required>
                         <div class="invalid-feedback">
-                            Please provide a valid zip.
+                            Please provide a valid zip code.
                         </div>
                     </div>
 
                     <div class="mb-3">
                         <label for="Textarea" class="form-label">Send me a Message</label>
-                        <textarea class="form-control" id="Textarea" rows="3"
+                        <textarea class="form-control" id="Textarea" rows="3" name="Message"
                             placeholder="Enter your message" required></textarea>
-                            <div class="invalid-feedback">
-                                Please provide a message.
-                            </div>
+                        <div class="invalid-feedback">
+                            Please provide a message.
+                        </div>
                     </div>
 
                     <div class="col-12">
-                        <button class="btn btn-success" data-aos="zoom-in"  data-aos-duration="1200" data-bs-toggle="tooltip"
-                        title="Thank you! I'll try to respond ASAP." type="submit">Submit</button>
+                        <button class="btn btn-success" data-aos="zoom-in" data-aos-duration="1200"
+                            data-bs-toggle="tooltip" title="Thank you! I'll try to respond ASAP."
+                            type="submit">Submit</button>
                     </div>
                 </form>
+                <div id="result"></div>
             </div>
 
 
@@ -199,16 +209,17 @@
 
     <footer class="footer border-top py-3 contactFoot foot">
         <div class="container-lg">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
-              <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i class="fab fa-linkedin"></i></a>
-              <p class="m-0 text-center">&copy; 2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:prayushneup12@gmail.com" class="mx-2"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/prayush-neupane/" class="mx-2"><i
+                            class="fab fa-linkedin"></i></a>
+                    <p class="m-0 text-center">&copy; 2024. All rights reserved to <strong>Prayush Neupane</strong>.</p>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
-      
+    </footer>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script>// Example starter JavaScript for disabling form submissions if there are invalid fields
         (() => {
@@ -229,6 +240,62 @@
                 }, false)
             })
         })()</script>
+
+    <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function (e) {
+            const formData = new FormData(form);
+            e.preventDefault(); // Prevent default form submission
+
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+                .then(async (response) => {
+                    let json = await response.json();
+                    if (response.status === 200) {
+                        result.innerHTML = json.message;
+                        setTimeout(() => {
+                            window.location.href = 'https://prayushneup.github.io/Portfolio/submission.html'; // Update with your thank-you page URL
+                        });
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function () {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 3000);
+                });
+        });
+    </script>
+
+    <script>
+        window.onload = function () {
+            // Reset the form fields when the page loads
+            document.getElementById("form").reset();
+        };
+    </script>
+
+
+
     <script src="js/aos.js"></script>
     <script>
         AOS.init(); /* AOS animation library execution*/
