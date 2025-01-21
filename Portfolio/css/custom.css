@@ -46,7 +46,7 @@ body{
 }
 
 .spacer {
-    margin-top: 260px;
+    margin-top: 272px;
 }
 
 .spacer2{
@@ -72,18 +72,28 @@ body{
     color: rgb(110, 110, 110);
 }
 
-.home-img img {
+.home-img img{
     box-shadow: 7px 7px 29px 20px rgba(60, 61, 61, 0.171);
     transition: transform 0.3s ease-in-out;
     /* Smooth transition for hover effect */
 }
 
-.home-img img:hover {
+.home-img img:hover{
     transform: translateY(-15px);
     /* Moves the image 10px up on hover */
     box-shadow: 8px 8px 29px 28px rgba(60, 61, 61, 0.171);
-    
 }
+
+
+.VisingCard {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.VisingCard:hover {
+    transform: translateY(-10px);
+}
+
 
 .services_wrapper .card {
     background-color: var(--bg-light);
