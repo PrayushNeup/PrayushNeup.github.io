@@ -295,6 +295,16 @@ body.dark-mode .navbar a.nav-link.active {
     transition: color 0.3s ease;
 }
 
+.introFirst, .introSecond, .navbar-brand{
+    color:#0f6fff;
+}
+
+.dark-mode .introFirst, 
+.dark-mode .introSecond,
+.dark-mode .navbar-brand{
+    color: #6aa4fc;
+}
+
 .introText {
     color: #586066;
     /* This is the muted color (text-muted) */
