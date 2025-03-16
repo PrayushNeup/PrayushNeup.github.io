@@ -236,20 +236,20 @@ body {
 
 .navbar-brand {
     position: relative;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navbar-brand .logo {
-    height: 68px;
+    height: 60px;
     /* Desired height of the logo */
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-48%);
     right: 68%;
 }
 
 .navbar-brand:hover {
-    transform: scale(1.07);
+    transform: scale(1.1);
 
 }
 
