@@ -219,7 +219,12 @@ body {
 
 .navbar a.nav-link {
     color: #0f6fff;
+    
 }
+.nav-item{
+    padding-left: 35px;
+} 
+
 
 .navbar a.nav-link:hover {
     color: #0035a8;
