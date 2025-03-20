@@ -53,7 +53,7 @@ body {
 }
 
 .spacer {
-    margin-top: 272px;
+    margin-top: 210px;
 }
 
 .spacer2 {
@@ -247,7 +247,7 @@ body {
 }
 
 .navbar-brand .logo {
-    height: 60px;
+    height: 54px;
     /* Desired height of the logo */
     position: absolute;
     top: 50%;
@@ -256,7 +256,7 @@ body {
 }
 
 .navbar-brand:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 
 }
 
